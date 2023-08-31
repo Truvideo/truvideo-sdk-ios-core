@@ -12,6 +12,11 @@
 		<key>TruvideoSdkCore.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>truvideo-sdk-ios-core-Package.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 	</dict>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>TruVideoCore_TruVideoCoreTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TruvideoSdk</key>
 		<dict>
 			<key>primary</key>
 			<true/>
