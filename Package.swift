@@ -3,8 +3,6 @@
 
 import PackageDescription
 
-let sharedPackageVersion = "0.0.7"
-
 let package = Package(
     name: "TruvideoSdk",
     products: [
@@ -22,8 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdk",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/\(packageVersion)/TruvideoSdk.xcframework.zip",
-            checksum: "f1367031cdb7fefb19e79a575d711cdde2d92398508e724535204d3f806b2f91"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.7/TruvideoSdk.xcframework.zip",
+            checksum: "7b90f6b3ff214a937dfe3200fdcc1e589eeb198e02dc0d7b01ba83e30b0ac69d"
         ),
         .target(
             name: "TruvideoSdkTargets",
