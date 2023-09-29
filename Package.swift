@@ -20,8 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TruvideoSdk",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.13/TruvideoSdk.xcframework.zip",
-            checksum: "527a9713f0ec2356c1932f0f3d931ba5930137655e2ee5cb392180fd85ba1c99"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.14/TruvideoSdk.xcframework.zip",
+            checksum: "8721a7b58ffef7d8ed76029b3fcab5d0f2860c6d39b27a7e5cabc307eb4391c0"
         ),
         .target(
             name: "TruvideoSdkTargets",
