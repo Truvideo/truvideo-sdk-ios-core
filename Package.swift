@@ -18,15 +18,15 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-         .binaryTarget(
+        .binaryTarget(
             name: "shared",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.20/shared.xcframework.zip",
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.21/shared.xcframework.zip",
             checksum: "4445be410f9722f25088b0ff1b43af28788a19a286ab18b51e856ac25d92b6a6"
         ),
         .binaryTarget(
             name: "TruvideoSdk",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.20/TruvideoSdk.xcframework.zip",
-            checksum: "488a8b63bc05248dc33e81a762eb79f893460d436f6fd54124ebbe86c9d2bf04"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.21/TruvideoSdk.xcframework.zip",
+            checksum: "7f1e51e1565a0712175c5dcf99396b1b0793325260d7536dbac2aac6af5ed806"
         ),
         .target(
             name: "TruvideoSdkTargets",
