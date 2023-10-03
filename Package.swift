@@ -1,29 +1,28 @@
 // swift-tools-version: 5.8
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "Common",
+    name: "TruvideoSdk",
     products: [
         .library(
-            name: "Common",
-            targets: ["CommonTargets"]),
+            name: "TruvideoSdk",
+            targets: ["TruvideoSdkTargets"]),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
             name: "Common",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-common-wrapper/releases/download/0.0.1/Common.xcframework.zip",
-            checksum: "3574c57535af0da3f903a4a95f32baec8fc907ff4405a9ca8708e56077a135d4"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-common/releases/download/0.0.26/Common.xcframework.zip",
+            checksum: "43fcac1b0801d7c3f06ba256be78b133f3317e16d96bbd84ec0b110b59448c76"
         ),
         .binaryTarget(
             name: "Shared",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-common-wrapper/releases/download/0.0.1/shared.xcframework.zip",
-            checksum: "4445be410f9722f25088b0ff1b43af28788a19a286ab18b51e856ac25d92b6a6"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-shared/releases/download/0.0.27/shared.xcframework.zip",
+            checksum: ""
         ),
         .target(
-            name: "CommonTargets",
+            name: "TruvideoSdkTargets",
             dependencies: [
                 .target(name: "Common"),
                 .target(name: "Shared")
