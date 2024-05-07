@@ -9,12 +9,14 @@ let package = Package(
             name: "TruvideoSdk",
             targets: ["TruvideoSdkTargets"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/aws-amplify/aws-sdk-ios-spm", exact: "2.33.4")
+    ],
     targets: [
         .binaryTarget(
             name: "TruvideoSdk",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.1.2-rc.95/TruvideoSdk.xcframework.zip",
-            checksum: "6f40bd41016b0336b0d942ec300b923b0712f4c8949d308fdcf1a5375667dfc1"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/66.1.1.96/TruvideoSdk.xcframework.zip",
+            checksum: "0bc30b28ffb55f335eeb23e196c340f24221587596e221951e7d1849e4dfd63d"
         ),
         .binaryTarget(
             name: "Common",
@@ -23,15 +25,19 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Shared",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-shared/releases/download/0.0.64/shared.xcframework.zip",
-            checksum: "fe074c3a51641a208486f97a676ac803cb99de7dc19d5bc0666493010d7e45c5"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-shared/releases/download/0.0.66/shared.xcframework.zip",
+            checksum: "44e63b830d7d6772e86e722223854f4e83f98e6e42c26fa0a2340a6f5a158297"
         ),
         .target(
             name: "TruvideoSdkTargets",
             dependencies: [
                 .target(name: "TruvideoSdk"),
                 .target(name: "Common"),
-                .target(name: "Shared")
+                .target(name: "Shared"),
+                .product(name: "AWSS3", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCore", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCognitoIdentityProvider", package: "aws-sdk-ios-spm"),
+                .product(name: "AWSCognitoIdentityProviderASF", package: "aws-sdk-ios-spm")
             ],
             path: "Sources"
         )
