@@ -39,6 +39,15 @@ Pod::Spec.new do |s|
   
   s.subspec 'Video' do |video|
     video.dependency 'truvideo-sdk-core/Core'
-    video.vendored_frameworks = 'Frameworks/TruvideoSdkVideo.xcframework'
+    video.vendored_frameworks =
+    'Frameworks/TruvideoSdkVideo.xcframework',
+    'Frameworks/ffmpegkit.xcframework',
+    'Frameworks/libavcodec.xcframework',
+    'Frameworks/libavdevice.xcframework',
+    'Frameworks/libavfilter.xcframework',
+    'Frameworks/libavformat.xcframework',
+    'Frameworks/libavutil.xcframework',
+    'Frameworks/libswresample.xcframework',
+    'Frameworks/libswscale.xcframework'
   end
 end
