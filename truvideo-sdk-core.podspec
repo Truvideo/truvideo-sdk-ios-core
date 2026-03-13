@@ -9,6 +9,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '15.0'
   s.swift_version         = '5.0'
 
+  s.dependency 'AWSS3'
+  s.dependency 'AWSCore'
+  s.dependency 'AWSCognitoIdentityProvider'
+  s.dependency 'AWSCognitoIdentityProviderASF'
+
   s.default_subspecs = 'Core'
 
   s.subspec 'Core' do |core|
@@ -24,6 +29,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'MediaUpload' do |upload|
     upload.dependency 'truvideo-sdk-core/Core'
+    upload.dependency 'AWSS3'
+    upload.dependency 'AWSCore'
+    upload.dependency 'AWSCognitoIdentityProvider'
+    upload.dependency 'AWSCognitoIdentityProviderASF'
     upload.vendored_frameworks = 'Frameworks/TruVideoMediaUpload.xcframework'
   end
   
