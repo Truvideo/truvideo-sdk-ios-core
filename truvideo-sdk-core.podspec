@@ -17,14 +17,10 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'Core'
 
   s.subspec 'Core' do |core|
-    core.vendored_frameworks =
-      'Frameworks/DI.xcframework',
-      'Frameworks/TruVideoRuntime.xcframework',
-      'Frameworks/TruVideoFoundation.xcframework',
-      'Frameworks/Networking.xcframework',
-      'Frameworks/StorageKit.xcframework',
-      'Frameworks/TruVideoApi.xcframework',
-      'Frameworks/TruvideoSdk.xcframework'
+    core.vendored_frameworks = [
+      'Frameworks/TruvideoSdk.xcframework', 
+      'Frameworks/shared.xcframework'
+    ]
   end
 
   s.subspec 'MediaUpload' do |upload|
