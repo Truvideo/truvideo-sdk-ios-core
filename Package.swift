@@ -19,6 +19,10 @@ let package = Package(
             targets: ["TruvideoSdkMedia", "TruvideoSdkMediaTarget"]
         ),
         .library(
+            name: "TruvideoSdkImage",
+            targets: ["TruvideoSdkImage", "TruvideoSdkImageTarget"]
+        ),
+        .library(
             name: "TruvideoSdkVideo",
             targets: ["TruvideoSdkVideo", "TruvideoSdkVideoTarget"]
         ),
@@ -38,6 +42,7 @@ extension Target {
             truvideoSdkTargets,
             truVideoMediaUploadTargets,
             truvideoSdkCameraTargets,
+            truvideoSdkImageTargets,
             truvideoSdkMediaTargets,
             truvideoSdkVideoTargets,
         ]
@@ -75,6 +80,21 @@ extension Target {
                 .product(name: "TruvideoSdkVideoUtils", package: "truvideo-sdk-ios-video-utils")
             ],
             path: "TruVideoSdkCamera"
+        ),
+    ]
+
+    static var truvideoSdkImageTargets: [Target] = [
+        .binaryTarget(
+            name: "TruvideoSdkCamera",
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/79.0.0/TruvideoSdkImage.xcframework.zip",
+            checksum: "23041e9cdcc5f1ce29e888058234338b2399c865f3c3ced95aad54ad44ab444c"
+        ),
+        .target(
+            name: "TruvideoSdkImageTarget",
+            dependencies: [
+                "TruvideoSdkTarget",
+            ],
+            path: "TruVideoSdkImage"
         ),
     ]
     
