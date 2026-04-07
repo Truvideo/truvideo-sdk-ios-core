@@ -85,9 +85,9 @@ extension Target {
 
     static var truvideoSdkImageTargets: [Target] = [
         .binaryTarget(
-            name: "TruvideoSdkCamera",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/79.0.1-RC.6/TruvideoSdkImage.xcframework.zip",
-            checksum: "adf74fec3fa6212caf8c74dbe399a56ac5a04dc6f5c66914cc7cf326fc9821dc"
+            name: "TruvideoSdkImage",
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/79.0.0/TruvideoSdkImage.xcframework.zip",
+            checksum: "23041e9cdcc5f1ce29e888058234338b2399c865f3c3ced95aad54ad44ab444c"
         ),
         .target(
             name: "TruvideoSdkImageTarget",
