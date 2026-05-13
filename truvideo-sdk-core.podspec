@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name                  = 'truvideo-sdk-core'
-  s.version               = '1.0.0'
+  s.version               = '1.0.1-RC.1'
   s.summary               = 'Truvideo SDK for iOS'
   s.homepage              = 'https://github.com/Truvideo/truvideo-sdk-ios-core'
   s.license               = 'Commercial'
   s.author                = 'Truvideo'
-  s.source                = { :http => "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.0/TruvideoSdk.zip" }
+  s.source                = { :http => "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.1-RC.1/TruvideoSdk.zip" }
   s.ios.deployment_target = '15.0'
   s.swift_version         = '5.0'
 
