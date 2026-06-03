@@ -23,6 +23,20 @@ Pod::Spec.new do |s|
     ]
   end
 
+  s.subspec 'MediaProcessing' do |processing|
+    upload.dependency 'truvideo-sdk-core/Core'
+    upload.vendored_frameworks = 
+    'Frameworks/TruVideoMediaProcessing.xcframework'
+    'Frameworks/ffmpegkit.xcframework',
+    'Frameworks/libavcodec.xcframework',
+    'Frameworks/libavdevice.xcframework',
+    'Frameworks/libavfilter.xcframework',
+    'Frameworks/libavformat.xcframework',
+    'Frameworks/libavutil.xcframework',
+    'Frameworks/libswresample.xcframework',
+    'Frameworks/libswscale.xcframework'
+  end
+
   s.subspec 'MediaUpload' do |upload|
     upload.dependency 'truvideo-sdk-core/Core'
     upload.dependency 'AWSS3'
@@ -49,15 +63,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'Video' do |video|
     video.dependency 'truvideo-sdk-core/Core'
-    video.vendored_frameworks =
-    'Frameworks/TruvideoSdkVideo.xcframework',
-    'Frameworks/ffmpegkit.xcframework',
-    'Frameworks/libavcodec.xcframework',
-    'Frameworks/libavdevice.xcframework',
-    'Frameworks/libavfilter.xcframework',
-    'Frameworks/libavformat.xcframework',
-    'Frameworks/libavutil.xcframework',
-    'Frameworks/libswresample.xcframework',
-    'Frameworks/libswscale.xcframework'
+    video.dependency 'truvideo-sdk-core/MediaProcessing'
   end
 end
