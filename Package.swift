@@ -40,6 +40,7 @@ extension Target {
     static var allTargets: [Target] {
         [
             truvideoSdkTargets,
+            truVideoMediaProcessingTargets,
             truVideoMediaUploadTargets,
             truvideoSdkCameraTargets,
             truvideoSdkImageTargets,
@@ -124,12 +125,29 @@ extension Target {
             name: "TruvideoSdkVideoTarget",
             dependencies: [
                 "TruvideoSdkTarget",
+                "TruVideoMediaProcessingTarget",
                 .product(name: "TruvideoSdkVideoUtils", package: "truvideo-sdk-ios-video-utils")
             ],
             path: "TruVideoSdkVideo"
         ),
     ]
     
+    static var truVideoMediaProcessingTargets: [Target] = [
+        .binaryTarget(
+            name: "TruVideoMediaProcessing",
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.0/TruVideoMediaProcessing.xcframework.zip",
+            checksum: "b9b26ab9580d5011ed93f55b208b208e6aea00e125756d444fbcf2b5836afcb6"
+        ),
+        .target(
+            name: "TruVideoMediaProcessingTarget",
+            dependencies: [
+                "TruVideoMediaProcessing",
+                "TruvideoSdkTarget",
+            ],
+            path: "TruVideoMediaProcessing"
+        ),
+    ]
+
     static var truVideoMediaUploadTargets: [Target] = [
         .binaryTarget(
             name: "TruVideoMediaUpload",
