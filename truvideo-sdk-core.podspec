@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.dependency 'AWSCore'
   s.dependency 'AWSCognitoIdentityProvider'
   s.dependency 'AWSCognitoIdentityProviderASF'
+  s.dependency 'NCKit', '1.2.1'
 
   s.default_subspecs = 'Core'
 
@@ -25,6 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'MediaProcessing' do |processing|
     processing.dependency 'truvideo-sdk-core/Core'
+    processing.dependency 'NCKit'
     processing.vendored_frameworks = [
     'Frameworks/TruVideoMediaProcessing.xcframework',
     'Frameworks/ffmpegkit.xcframework',

@@ -29,6 +29,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/aws-amplify/aws-sdk-ios-spm", exact: "2.33.4"),
+        .package(url: "https://github.com/5Exceptions-Mobile-Team/NCKit", exact: "1.2.1"),
         .package(url: "https://github.com/Truvideo/truvideo-sdk-ios-common", exact: "0.0.78"),
         .package(url: "https://github.com/Truvideo/truvideo-sdk-ios-video-utils", exact: "0.0.3")
     ],
@@ -143,6 +144,7 @@ extension Target {
             dependencies: [
                 "TruVideoMediaProcessing",
                 "TruvideoSdkTarget",
+                .product(name: "NCKit", package: "NCKit"),
             ],
             path: "TruVideoMediaProcessing"
         ),
