@@ -51,6 +51,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Camera' do |camera|
     camera.dependency 'truvideo-sdk-core/MediaUpload'
+    camera.dependency 'truvideo-sdk-core/MediaProcessing'
     camera.vendored_frameworks = 'Frameworks/TruvideoSdkCamera.xcframework'
   end
   

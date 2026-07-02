@@ -78,8 +78,8 @@ extension Target {
             name: "TruvideoSdkCameraTarget",
             dependencies: [
                 "TruvideoSdkTarget",
-                "TruVideoMediaUploadTarget",
-                .product(name: "TruvideoSdkVideoUtils", package: "truvideo-sdk-ios-video-utils")
+                "TruVideoMediaProcessingTarget",
+                "TruVideoMediaUploadTarget",                
             ],
             path: "TruVideoSdkCamera"
         ),
