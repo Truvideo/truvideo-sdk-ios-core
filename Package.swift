@@ -144,6 +144,7 @@ extension Target {
                 "TruVideoMediaProcessing",
                 "TruvideoSdkTarget",
                 .product(name: "NCKit", package: "NCKit"),
+                .product(name: "TruvideoSdkVideoUtils", package: "truvideo-sdk-ios-video-utils"),
             ],
             path: "TruVideoMediaProcessing"
         ),
