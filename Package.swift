@@ -127,7 +127,6 @@ extension Target {
             dependencies: [
                 "TruvideoSdkTarget",
                 "TruVideoMediaProcessingTarget",
-                .product(name: "TruvideoSdkVideoUtils", package: "truvideo-sdk-ios-video-utils")
             ],
             path: "TruVideoSdkVideo"
         ),
