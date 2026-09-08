@@ -54,8 +54,8 @@ extension Target {
     static var truvideoSdkTargets: [Target] = [
         .binaryTarget(
             name: "TruvideoSdk",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruvideoSdk.xcframework.zip",
-            checksum: "4d3ad4ca15a62e8aaa983d74b25944a06782848ae0bdac97d83691320185fad7"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruvideoSdk.xcframework.zip",
+            checksum: "67eb883498c0d854a98331f2ec70335678634544cdba71a72491edbb4e7b9771"
         ),
         .target(
             name: "TruvideoSdkTarget",
@@ -71,8 +71,8 @@ extension Target {
     static var truvideoSdkCameraTargets: [Target] = [
         .binaryTarget(
             name: "TruvideoSdkCamera",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruvideoSdkCamera.xcframework.zip",
-            checksum: "8a9ef945256ff44fd6a63c5093d67853c44f529cb1e250e9e38dd79e8e4041f4"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruvideoSdkCamera.xcframework.zip",
+            checksum: "4b8094418be80982e33f5123f89c1816757bbc0eaa662826e8759f0739557829"
         ),
         .target(
             name: "TruvideoSdkCameraTarget",
@@ -88,8 +88,8 @@ extension Target {
     static var truvideoSdkImageTargets: [Target] = [
         .binaryTarget(
             name: "TruvideoSdkImage",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruvideoSdkImage.xcframework.zip",
-            checksum: "13fb9cae885cf0209b4bd3729d305528f32489cf7659d48bf99a7cda0adb546c"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruvideoSdkImage.xcframework.zip",
+            checksum: "50dd6d1728841106e80a07634f006c2ac6b75095cd897062682be310ea8f2c9b"
         ),
         .target(
             name: "TruvideoSdkImageTarget",
@@ -103,8 +103,8 @@ extension Target {
     static var truvideoSdkMediaTargets: [Target] = [
         .binaryTarget(
             name: "TruvideoSdkMedia",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruvideoSdkMedia.xcframework.zip",
-            checksum: "60a4539d928e0c52bc481c98cafa768aeb4efa790ae03501149c4340e284bdd3"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruvideoSdkMedia.xcframework.zip",
+            checksum: "5552232fefbd31520c986eff626ed3eb20af34d1e88d3821d5e410099193c0bf"
         ),
         .target(
             name: "TruvideoSdkMediaTarget",
@@ -119,8 +119,8 @@ extension Target {
     static var truvideoSdkVideoTargets: [Target] = [
         .binaryTarget(
             name: "TruvideoSdkVideo",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruvideoSdkVideo.xcframework.zip",
-            checksum: "a4ac460e97c321745d4f71e7aa5a42ea2d0c2474731c68f19c0ab850685e1a6f"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruvideoSdkVideo.xcframework.zip",
+            checksum: "9d6ea7fb24f00ac82ea46e2feb8636cab523385e82bbf03866e7754c98955a45"
         ),
         .target(
             name: "TruvideoSdkVideoTarget",
@@ -135,8 +135,8 @@ extension Target {
     static var truVideoMediaProcessingTargets: [Target] = [
         .binaryTarget(
             name: "TruVideoMediaProcessing",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruVideoMediaProcessing.xcframework.zip",
-            checksum: "f627b973b70b2ac54d6acbf8619b98f40ee6683afc7469835646c0c05286d993"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruVideoMediaProcessing.xcframework.zip",
+            checksum: "e88520a28434b2ec65af9a13f7838ace4d6ffc4720caa7e340d7e23be72e45a6"
         ),
         .target(
             name: "TruVideoMediaProcessingTarget",
@@ -153,8 +153,8 @@ extension Target {
     static var truVideoMediaUploadTargets: [Target] = [
         .binaryTarget(
             name: "TruVideoMediaUpload",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.2/TruVideoMediaUpload.xcframework.zip",
-            checksum: "4e859fdc4b20ac9924657d7f2bcfb7ff5c5364ce9696250bc6e3afb66bf8e952"
+            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/1.0.10-RC.3/TruVideoMediaUpload.xcframework.zip",
+            checksum: "c3d3fc1f96162f6f86ff85ffc8085d12d9a7c39162be0c53127cf8e0a765e4e4"
         ),
         .target(
             name: "TruVideoMediaUploadTarget",
